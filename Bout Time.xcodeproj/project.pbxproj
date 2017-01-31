@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		41242A961E40B94200619611 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 41242A951E40B94200619611 /* data.json */; };
+		41242A981E40BFCA00619611 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41242A971E40BFCA00619611 /* Event.swift */; };
 		4163FB201E3BAB25008DA73B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163FB1F1E3BAB25008DA73B /* AppDelegate.swift */; };
 		4163FB221E3BAB25008DA73B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163FB211E3BAB25008DA73B /* ViewController.swift */; };
 		4163FB251E3BAB25008DA73B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4163FB231E3BAB25008DA73B /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		41242A951E40B94200619611 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		41242A971E40BFCA00619611 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		4163FB1C1E3BAB25008DA73B /* Bout Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bout Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4163FB1F1E3BAB25008DA73B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4163FB211E3BAB25008DA73B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 		41242A861E40B50C00619611 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				41242A971E40BFCA00619611 /* Event.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4163FB221E3BAB25008DA73B /* ViewController.swift in Sources */,
+				41242A981E40BFCA00619611 /* Event.swift in Sources */,
 				4163FB201E3BAB25008DA73B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
