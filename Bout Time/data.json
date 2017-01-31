@@ -1,0 +1,253 @@
+[
+    {
+        "id": 1,
+        "text": "The Mayflower Compact was signed",
+        "year": "1620",
+        "url": "https://en.wikipedia.org/wiki/Mayflower_Compact"
+    }, {
+        "id": 2,
+        "text": "Harvard College was founded.",
+        "year": "1636",
+        "url": "https://en.wikipedia.org/wiki/Harvard_College"
+    }, {
+        "id": 3,
+        "text": "The Massachusetts Bay Colony founded",
+        "year": "1629",
+        "url": "https://en.wikipedia.org/wiki/Massachusetts_Bay_Colony"
+    }, {
+        "id": 4,
+        "text": "Salem Witch trials take place",
+        "year": "1692",
+        "url": "https://en.wikipedia.org/wiki/Salem_witch_trials"
+    }, {
+        "id": 5,
+        "text": "French and Indian War begins",
+        "year": "1754",
+        "url": "https://en.wikipedia.org/wiki/French_and_Indian_War"
+    }, {
+        "id": 6,
+        "text": "French and Indian War ends",
+        "year": "1763",
+        "url": "https://en.wikipedia.org/wiki/Treaty_of_Paris_(1763)"
+    }, {
+        "id": 7,
+        "text": "The Stamp Act passed by the British Parliament",
+        "year": "1765",
+        "url": "https://en.wikipedia.org/wiki/Stamp_Act_1765"
+    }, {
+        "id": 8,
+        "text": "The Boston Massacre",
+        "year": "1770",
+        "url": "https://en.wikipedia.org/wiki/Boston_Massacre"
+    }, {
+        "id": 9,
+        "text": "The Boston Tea Party",
+        "year": "1773",
+        "url": "https://en.wikipedia.org/wiki/Boston_Tea_Party"
+    }, {
+        "id": 10,
+        "text": "First Continental Congress held in Philadelphia, PA.",
+        "year": "1774",
+        "url": "https://en.wikipedia.org/wiki/First_Continental_Congress"
+    }, {
+        "id": 11,
+        "text": "Battles of Lexington and Concord take place, beginning the American Revolutionary War.",
+        "year": "1775",
+        "url": "https://en.wikipedia.org/wiki/Battles_of_Lexington_and_Concord"
+    }, {
+        "id": 12,
+        "text": "United States Declaration of Independence written and signed",
+        "year": "1776",
+        "url": "https://en.wikipedia.org/wiki/United_States_Declaration_of_Independence"
+    }, {
+        "id": 13,
+        "text": "The Siege of Charleston, SC begins",
+        "year": "1780",
+        "url": "https://en.wikipedia.org/wiki/Siege_of_Charleston"
+    }, {
+        "id": 14,
+        "text": "The Articles of Confederation were ratified.",
+        "year": "1781",
+        "url": "https://en.wikipedia.org/wiki/Articles_of_Confederation"
+    }, {
+        "id": 15,
+        "text": "The American Revolutionary War Ends",
+        "year": "1783",
+        "url": "https://en.wikipedia.org/wiki/Treaty_of_Paris_(1783)"
+    }, {
+        "id": 16,
+        "text": "The United States Constitution written",
+        "year": "1787",
+        "url": "https://en.wikipedia.org/wiki/United_States_Constitution"
+    }, {
+        "id": 17,
+        "text": "The United States Bill of Rights Ratified",
+        "year": "1791",
+        "url": "https://en.wikipedia.org/wiki/United_States_Bill_of_Rights"
+    }, {
+        "id": 18,
+        "text": "The Whiskey Rebellion takes place",
+        "year": "1793",
+        "url": "https://en.wikipedia.org/wiki/Whiskey_Rebellion"
+    }, {
+        "id": 19,
+        "text": "George Washington Dies",
+        "year": "1799",
+        "url": "https://en.wikipedia.org/wiki/George_Washington"
+    }, {
+        "id": 20,
+        "text": "Thomas Jefferson elected 3rd President of United States",
+        "year": "1801",
+        "url": "https://en.wikipedia.org/wiki/Thomas_Jefferson"
+    }, {
+        "id": 21,
+        "text": "Louisiana Purchase is made.",
+        "year": "1803",
+        "url": "https://en.wikipedia.org/wiki/Louisiana_Purchase"
+    }, {
+        "id": 22,
+        "text": "Lewis and Clark begin their journey west",
+        "year": "1804",
+        "url": "https://en.wikipedia.org/wiki/Lewis_and_Clark"
+    }, {
+        "id": 23,
+        "text": "British Troops burn Washington D.C.",
+        "year": "1814",
+        "url": "https://en.wikipedia.org/wiki/Burning_of_Washington"
+    }, {
+        "id": 24,
+        "text": "Mississippi becomes the 20th state",
+        "year": "1817",
+        "url": "https://en.wikipedia.org/wiki/Mississippi"
+    }, {
+        "id": 25,
+        "text": "The Oregon Trail comes into use by settlers migrating to the Pacific Northwest.",
+        "year": "1830",
+        "url": "https://en.wikipedia.org/wiki/Oregon_Trail"
+    }, {
+        "id": 26,
+        "text": "The Battle of the Alamo takes place",
+        "year": "1836",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_the_Alamo"
+    }, {
+        "id": 27,
+        "text": "Texas becomes the 28th State",
+        "year": "1845",
+        "url": "https://en.wikipedia.org/wiki/Texas_Annexation"
+    }, {
+        "id": 28,
+        "text": "The Mexicanu2013American War begins.",
+        "year": "1846",
+        "url": "https://en.wikipedia.org/wiki/Mexicanu2013American_War"
+    }, {
+        "id": 29,
+        "text": "The California Gold Rush begins",
+        "year": "1849",
+        "url": "https://en.wikipedia.org/wiki/California_Gold_Rush"
+    }, {
+        "id": 30,
+        "text": "John Brown leads a raid on Harper's Ferry.",
+        "year": "1859",
+        "url": "https://en.wikipedia.org/wiki/Harper%27s_Ferry,_West_Virginia"
+    }, {
+        "id": 31,
+        "text": "Abraham Lincoln is elected President of the United States.",
+        "year": "1860",
+        "url": "https://en.wikipedia.org/wiki/Abraham_Lincoln"
+    }, {
+        "id": 32,
+        "text": "American Civil War begins at Fort Sumter.",
+        "year": "1861",
+        "url": "https://en.wikipedia.org/wiki/Fort_Sumter"
+    }, {
+        "id": 33,
+        "text": "General Robert E. Lee is placed in command of the Army of Northern Virginia.",
+        "year": "1862",
+        "url": "https://en.wikipedia.org/wiki/Robert_E._Lee"
+    }, {
+        "id": 34,
+        "text": "Abraham Lincoln issues the Emancipation Proclamation",
+        "year": "1863",
+        "url": "https://en.wikipedia.org/wiki/Emancipation_Proclamation"
+    }, {
+        "id": 35,
+        "text": "Abraham Lincoln assassination",
+        "year": "1865",
+        "url": "https://en.wikipedia.org/wiki/Abraham_Lincoln_assassination"
+    }, {
+        "id": 36,
+        "text": "The Alaska territory is purchased from Russia.",
+        "year": "1867",
+        "url": "https://en.wikipedia.org/wiki/Alaska_Purchase"
+    }, {
+        "id": 37,
+        "text": "The First Transcontinental Railroad is completed at Promontory Summit, Utah Territory.",
+        "year": "1869",
+        "url": "https://en.wikipedia.org/wiki/First_Transcontinental_Railroad"
+    }, {
+        "id": 38,
+        "text": "Yellowstone National Park is created.",
+        "year": "1872",
+        "url": "https://en.wikipedia.org/wiki/Yellowstone_National_Park"
+    }, {
+        "id": 39,
+        "text": "Colorado becomes the 38th state.",
+        "year": "1876",
+        "url": "https://en.wikipedia.org/wiki/Colorado"
+    }, {
+        "id": 40,
+        "text": "Thomas Edison invents the light bulb.",
+        "year": "1879",
+        "url": "https://en.wikipedia.org/wiki/Thomas_Edison"
+    }, {
+        "id": 41,
+        "text": "The Brooklyn Bridge opens.",
+        "year": "1883",
+        "url": "https://en.wikipedia.org/wiki/Brooklyn_Bridge"
+    }, {
+        "id": 42,
+        "text": "Yosemite National Park is created.",
+        "year": "1890",
+        "url": "https://en.wikipedia.org/wiki/Yosemite_National_Park"
+    }, {
+        "id": 43,
+        "text": "The USS Maine explodes in Havana harbor.",
+        "year": "1898",
+        "url": "https://en.wikipedia.org/wiki/USS_Maine_(ACR-1)"
+    }, {
+        "id": 44,
+        "text": "President William McKinley assassinated",
+        "year": "1901",
+        "url": "https://en.wikipedia.org/wiki/Assassination_of_William_McKinley"
+    }, {
+        "id": 45,
+        "text": "The Ford Motor Company is founded",
+        "year": "1903",
+        "url": "https://en.wikipedia.org/wiki/Ford_Motor_Company"
+    }, {
+        "id": 46,
+        "text": "The Boy Scouts of America is created",
+        "year": "1910",
+        "url": "https://en.wikipedia.org/wiki/Boy_Scouts_of_America"
+    }, {
+        "id": 47,
+        "text": "The RMS Lusitania was sunk by a German torpedo",
+        "year": "1915",
+        "url": "https://en.wikipedia.org/wiki/RMS_Lusitania"
+    }, {
+        "id": 48,
+        "text": "The Treaty of Versailles signed ending WWI",
+        "year": "1919",
+        "url": "https://en.wikipedia.org/wiki/Treaty_of_Versailles"
+    }, {
+        "id": 49,
+        "text": "Charles Lindbergh made the first trans-Atlantic flight.",
+        "year": "1927",
+        "url": "https://en.wikipedia.org/wiki/Charles_Lindbergh"
+    }, {
+        "id": 50,
+        "text": "Franklin Delano Roosevelt is elected President",
+        "year": "1933",
+        "url": "https://en.wikipedia.org/wiki/United_States_presidential_election,_1932"
+    }
+]
