@@ -8,12 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class GameController: UIViewController {
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    fileprivate var rounds: [[Event]] = []
+    fileprivate let game = Game()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        Game()
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,4 +25,3 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 }
-
