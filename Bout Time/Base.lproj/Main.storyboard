@@ -21,19 +21,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="U6O-eh-mWn">
-                                <rect key="frame" x="8" y="28" width="359" height="496"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="110" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="U6O-eh-mWn">
+                                <rect key="frame" x="8" y="62" width="359" height="462"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GameCell" rowHeight="120" id="1zR-76-9hV" customClass="GameCell" customModule="Bout_Time" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="GameCell" rowHeight="120" id="1zR-76-9hV" customClass="GameCell" customModule="Bout_Time" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="359" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1zR-76-9hV" id="ciM-M3-dlQ">
                                             <rect key="frame" x="0.0" y="0.0" width="359" height="119"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ov2-pc-mW3">
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ov2-pc-mW3" customClass="CustomView" customModule="Bout_Time" customModuleProvider="target">
                                                     <rect key="frame" x="4" y="4" width="351" height="112"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmE-j7-HEJ">
@@ -98,17 +98,26 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Round One" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKc-q0-Bxh">
+                                <rect key="frame" x="8" y="28" width="359" height="26"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.16470588235294117" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="OKp-He-z55" secondAttribute="trailing" constant="8" id="1LG-7h-zCj"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OKp-He-z55" secondAttribute="bottom" constant="8" id="9cf-5y-V6W"/>
+                            <constraint firstAttribute="trailing" secondItem="HKc-q0-Bxh" secondAttribute="trailing" constant="8" id="D3L-J7-irT"/>
+                            <constraint firstItem="U6O-eh-mWn" firstAttribute="top" secondItem="HKc-q0-Bxh" secondAttribute="bottom" constant="8" id="Ge2-fe-GsZ"/>
+                            <constraint firstItem="HKc-q0-Bxh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="L2b-e9-aZg"/>
                             <constraint firstItem="U6O-eh-mWn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="Usc-JI-kje"/>
                             <constraint firstItem="OKp-He-z55" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ydi-tb-1wu"/>
                             <constraint firstItem="OKp-He-z55" firstAttribute="top" secondItem="U6O-eh-mWn" secondAttribute="bottom" constant="18" id="cNI-KH-c7I"/>
                             <constraint firstItem="OKp-He-z55" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="cd8-Ka-VwY"/>
+                            <constraint firstItem="HKc-q0-Bxh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="hrh-0X-E9w"/>
                             <constraint firstAttribute="trailing" secondItem="U6O-eh-mWn" secondAttribute="trailing" constant="8" id="pRL-jS-sgC"/>
-                            <constraint firstItem="U6O-eh-mWn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="pqW-DP-SyH"/>
                         </constraints>
                     </view>
                     <connections>
