@@ -22,5 +22,7 @@ struct Game {
                 }
             }
         }
+        self.events.shuffle()
+        self.rounds = self.events.chunk(by: 4)
     }
 }
