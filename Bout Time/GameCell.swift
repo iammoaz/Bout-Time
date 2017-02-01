@@ -10,7 +10,17 @@ import UIKit
 
 class GameCell: UITableViewCell {
     
+    @IBOutlet weak var eventLabel: UILabel!
+    
     static let identifier: String = String(describing: GameCell.self)
+    
+    var event: Event? {
+        didSet {
+            if let event = event {
+                self.eventLabel.text = event.text
+            }
+        }
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()

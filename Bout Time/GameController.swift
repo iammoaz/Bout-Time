@@ -48,8 +48,7 @@ extension GameController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: GameCell.identifier, for: indexPath) as! GameCell
         let event = self.currentRound[indexPath.row]
-        print(event)
-        cell.textLabel?.text = event.text
+        cell.event = event
         return cell
     }
 }
