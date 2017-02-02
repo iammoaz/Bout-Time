@@ -87,6 +87,8 @@ class GameController: UIViewController {
     }
     
     func configureViewForFinalResult() {
+        self.nextRoundButton.setTitle("PLAY AGAIN", for: .normal)
+        self.nextRoundButton.backgroundColor = Theme.playAgainColor
         self.tableView.isHidden = true
         self.footerLabel.isHidden = true
     }
@@ -146,8 +148,6 @@ extension GameController: UITableViewDataSource {
         }
         
         cell.indexLabel.text = "\(eventIndex!)"
-        
-        cell.showsReorderControl = false
         return cell
     }
 }
