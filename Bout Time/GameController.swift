@@ -56,21 +56,27 @@ class GameController: UIViewController {
     func configureRound() {
         self.currentRound = game.rounds[roundNumber]
         self.nextRoundButton.isHidden = true
+        self.timerLabel.isHidden = false
         self.roundNumberLabel.text = "Round \(self.roundNumber.asWord)"
+        self.footerLabel.text = "Shake to check answer"
         self.tableView.setEditing(true, animated: true)
         self.tableView.reloadData()
         startTimer()
     }
     
     func configureViewForFeedbackWith(_ value: Bool) {
+        stopTimer()
         self.tableView.setEditing(false, animated: true)
         self.nextRoundButton.isHidden = false
-        stopTimer()
+        self.footerLabel.text = "Tap events to learn more"
+        self.timerLabel.isHidden = true
         
         if value {
             sound.playCorrectSound()
+            self.nextRoundButton.backgroundColor = Theme.correctAnswerColor
         } else {
             sound.playIncorrectSound()
+            self.nextRoundButton.backgroundColor = Theme.wrongAnswerColor
         }
     }
     

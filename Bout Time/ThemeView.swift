@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CustomView: UIView {
+class ThemeView: UIView {
 
     override func awakeFromNib() {
         super.awakeFromNib()

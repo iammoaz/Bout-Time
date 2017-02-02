@@ -12,9 +12,10 @@
 		41242A9A1E40C16E00619611 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41242A991E40C16E00619611 /* DataService.swift */; };
 		41242A9C1E40C19000619611 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41242A9B1E40C19000619611 /* DataParser.swift */; };
 		41242A9E1E40C65E00619611 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41242A9D1E40C65E00619611 /* Game.swift */; };
+		415DF7E71E435F3D00950815 /* ThemeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415DF7E61E435F3D00950815 /* ThemeButton.swift */; };
 		415F3E9A1E41E14F00AE60D4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415F3E991E41E14F00AE60D4 /* Extensions.swift */; };
 		415F3E9C1E42049800AE60D4 /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415F3E9B1E42049800AE60D4 /* GameCell.swift */; };
-		415F3E9F1E4228B300AE60D4 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415F3E9E1E4228B300AE60D4 /* CustomView.swift */; };
+		415F3E9F1E4228B300AE60D4 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415F3E9E1E4228B300AE60D4 /* ThemeView.swift */; };
 		415F3EA11E433B9600AE60D4 /* WebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415F3EA01E433B9600AE60D4 /* WebController.swift */; };
 		415F3EA41E4348CF00AE60D4 /* Correct.wav in Resources */ = {isa = PBXBuildFile; fileRef = 415F3EA31E4348CF00AE60D4 /* Correct.wav */; };
 		415F3EA61E4348E700AE60D4 /* Incorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 415F3EA51E4348E700AE60D4 /* Incorrect.wav */; };
@@ -33,9 +34,10 @@
 		41242A991E40C16E00619611 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		41242A9B1E40C19000619611 /* DataParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
 		41242A9D1E40C65E00619611 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		415DF7E61E435F3D00950815 /* ThemeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeButton.swift; sourceTree = "<group>"; };
 		415F3E991E41E14F00AE60D4 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		415F3E9B1E42049800AE60D4 /* GameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
-		415F3E9E1E4228B300AE60D4 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		415F3E9E1E4228B300AE60D4 /* ThemeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
 		415F3EA01E433B9600AE60D4 /* WebController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebController.swift; sourceTree = "<group>"; };
 		415F3EA31E4348CF00AE60D4 /* Correct.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Correct.wav; sourceTree = "<group>"; };
 		415F3EA51E4348E700AE60D4 /* Incorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Incorrect.wav; sourceTree = "<group>"; };
@@ -169,7 +171,8 @@
 		415F3E9D1E42288500AE60D4 /* UI Design */ = {
 			isa = PBXGroup;
 			children = (
-				415F3E9E1E4228B300AE60D4 /* CustomView.swift */,
+				415F3E9E1E4228B300AE60D4 /* ThemeView.swift */,
+				415DF7E61E435F3D00950815 /* ThemeButton.swift */,
 			);
 			name = "UI Design";
 			sourceTree = "<group>";
@@ -296,8 +299,9 @@
 				41242A9E1E40C65E00619611 /* Game.swift in Sources */,
 				415F3EA11E433B9600AE60D4 /* WebController.swift in Sources */,
 				41242A9C1E40C19000619611 /* DataParser.swift in Sources */,
-				415F3E9F1E4228B300AE60D4 /* CustomView.swift in Sources */,
+				415F3E9F1E4228B300AE60D4 /* ThemeView.swift in Sources */,
 				415F3E9C1E42049800AE60D4 /* GameCell.swift in Sources */,
+				415DF7E71E435F3D00950815 /* ThemeButton.swift in Sources */,
 				41242A981E40BFCA00619611 /* Event.swift in Sources */,
 				4163FB201E3BAB25008DA73B /* AppDelegate.swift in Sources */,
 				418A18691E43500F00280030 /* Theme.swift in Sources */,
