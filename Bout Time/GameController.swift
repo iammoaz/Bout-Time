@@ -24,7 +24,7 @@ class GameController: UIViewController {
     private var timer: Timer?
     private var timerCount: Int = 60
     
-    private var roundNumber: Int = 1 {
+    private var roundNumber: Int = 0 {
         didSet {
             configureRound()
         }
@@ -33,7 +33,7 @@ class GameController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.roundNumber = 1
+        self.roundNumber = 0
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
@@ -54,10 +54,16 @@ class GameController: UIViewController {
     }
     
     func configureRound() {
+        if (self.roundNumber + 1) == game.rounds.count {
+            self.roundNumberLabel.text = "Final Round"
+            self.nextRoundButton.setTitle("FINISH", for: .normal)
+        } else {
+            self.roundNumberLabel.text = "Round \((self.roundNumber + 1).asWord)"
+        }
+        
         self.currentRound = game.rounds[roundNumber]
         self.nextRoundButton.isHidden = true
         self.timerLabel.isHidden = false
-        self.roundNumberLabel.text = "Round \(self.roundNumber.asWord)"
         self.footerLabel.text = "Shake to check answer"
         self.tableView.setEditing(true, animated: true)
         self.tableView.reloadData()
@@ -78,6 +84,11 @@ class GameController: UIViewController {
             sound.playIncorrectSound()
             self.nextRoundButton.backgroundColor = Theme.wrongAnswerColor
         }
+    }
+    
+    func configureViewForFinalResult() {
+        self.tableView.isHidden = true
+        self.footerLabel.isHidden = true
     }
     
     func startTimer() {
@@ -108,7 +119,11 @@ class GameController: UIViewController {
     }
     
     @IBAction func nextRoundButton(sender: UIButton) {
-        self.roundNumber += 1
+        if (self.roundNumber + 1) < game.rounds.count {
+            self.roundNumber += 1
+        } else if (self.roundNumber + 1) >= game.rounds.count {
+            configureViewForFinalResult()
+        }
     }
 }
 

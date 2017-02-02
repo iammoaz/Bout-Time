@@ -10,7 +10,7 @@ import Foundation
 
 struct Game {
     private (set) var events: [Event] = []
-    private (set) var rounds: [[Event]] = []
+    private (set) var rounds: ArraySlice<[Event]> = []
     
     init() {
         self.events.removeAll()
@@ -22,8 +22,9 @@ struct Game {
                 }
             }
         }
+        
         self.events.shuffle()
-        self.rounds = self.events.chunk(by: 4)
+        self.rounds = self.events.chunk(by: 4).prefix(6)
     }
     
     func checkAnswerFor(round: [Event]) -> Bool {
