@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class GameController: UIViewController {
     
@@ -25,7 +26,7 @@ class GameController: UIViewController {
         self.tableView.separatorStyle = .none
         self.tableView.isScrollEnabled = false
         self.tableView.allowsSelection = true
-        self.tableView.setEditing(true, animated: true)
+//        self.tableView.setEditing(true, animated: true)
         
         configureRound()
     }
@@ -44,6 +45,10 @@ class GameController: UIViewController {
     func configureRound() {
         self.currentRound = game.rounds[roundNumber]
         self.tableView.reloadData()
+    }
+    
+    func configureViewForFeedback() {
+        
     }
 }
 
@@ -89,6 +94,24 @@ extension GameController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool {
         return false
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath) as! GameCell
+        let event = cell.event
+        let url = URL(string: (event?.url)!)
+        presentWebView(url: url!)
+    }
+}
+
+extension GameController: SFSafariViewControllerDelegate {
+    func presentWebView(url: URL) {
+        let webController = WebController(url: url, entersReaderIfAvailable: true)
+        self.present(webController, animated: true, completion: nil)
+    }
+    
+    func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
+        controller.dismiss(animated: true, completion: nil)
     }
 }
 
