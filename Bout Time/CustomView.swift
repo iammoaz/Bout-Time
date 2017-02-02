@@ -22,6 +22,7 @@ class CustomView: UIView {
     
     func setupView() {
         self.layer.cornerRadius = 4.0
+        self.backgroundColor = .white
     }
 
 }

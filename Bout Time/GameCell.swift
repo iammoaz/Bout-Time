@@ -11,6 +11,7 @@ import UIKit
 class GameCell: UITableViewCell {
     
     @IBOutlet weak var eventLabel: UILabel!
+    @IBOutlet weak var indexLabel: UILabel!
     
     static let identifier: String = String(describing: GameCell.self)
     
