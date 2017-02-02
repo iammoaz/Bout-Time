@@ -12,23 +12,28 @@ import SafariServices
 class GameController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var nextRoundButton: UIButton!
     
     fileprivate var currentRound: [Event] = []
     
     fileprivate let game = Game()
-    private var roundNumber: Int = 1
+    fileprivate let sound = Sound()
+    private var roundNumber: Int = 1 {
+        didSet {
+            configureRound()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.roundNumber = 1
+        
         self.tableView.dataSource = self
         self.tableView.delegate = self
         self.tableView.separatorStyle = .none
         self.tableView.isScrollEnabled = false
         self.tableView.allowsSelection = true
-//        self.tableView.setEditing(true, animated: true)
-        
-        configureRound()
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,17 +43,30 @@ class GameController: UIViewController {
     
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
-            print(game.checkAnswerFor(round: self.currentRound))
+            configureViewForFeedbackWith(game.checkAnswerFor(round: self.currentRound))
         }
     }
     
     func configureRound() {
         self.currentRound = game.rounds[roundNumber]
+        self.nextRoundButton.isHidden = false
+        self.tableView.setEditing(true, animated: true)
         self.tableView.reloadData()
     }
     
-    func configureViewForFeedback() {
+    func configureViewForFeedbackWith(_ value: Bool) {
+        self.tableView.setEditing(false, animated: true)
+        self.nextRoundButton.isHidden = false
         
+        if value {
+            sound.playCorrectSound()
+        } else {
+            sound.playIncorrectSound()
+        }
+    }
+    
+    @IBAction func nextRoundButtonT(sender: UIButton) {
+        self.roundNumber += 1
     }
 }
 
