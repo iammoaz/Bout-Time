@@ -96,7 +96,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="359" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <action selector="nextRoundButtonTWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dR0-WK-WQZ"/>
+                                            <action selector="nextRoundButtonWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K4P-bg-K8g"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLf-cc-Dch">
@@ -138,6 +138,7 @@
                     <connections>
                         <outlet property="nextRoundButton" destination="XYf-6P-mq3" id="jzt-v1-VdV"/>
                         <outlet property="tableView" destination="U6O-eh-mWn" id="cYi-Pu-5e0"/>
+                        <outlet property="timerLabel" destination="sLf-cc-Dch" id="RYf-3m-Fo8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

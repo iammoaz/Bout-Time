@@ -24,6 +24,7 @@
 		4163FB251E3BAB25008DA73B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4163FB231E3BAB25008DA73B /* Main.storyboard */; };
 		4163FB271E3BAB25008DA73B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4163FB261E3BAB25008DA73B /* Images.xcassets */; };
 		4163FB2A1E3BAB25008DA73B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4163FB281E3BAB25008DA73B /* LaunchScreen.storyboard */; };
+		418A18691E43500F00280030 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418A18681E43500F00280030 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		4163FB261E3BAB25008DA73B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4163FB291E3BAB25008DA73B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4163FB2B1E3BAB25008DA73B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		418A18681E43500F00280030 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		41242A8C1E40B56400619611 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
+				418A18681E43500F00280030 /* Theme.swift */,
 			);
 			name = Theme;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				415F3E9C1E42049800AE60D4 /* GameCell.swift in Sources */,
 				41242A981E40BFCA00619611 /* Event.swift in Sources */,
 				4163FB201E3BAB25008DA73B /* AppDelegate.swift in Sources */,
+				418A18691E43500F00280030 /* Theme.swift in Sources */,
 				41242A9A1E40C16E00619611 /* DataService.swift in Sources */,
 				415F3E9A1E41E14F00AE60D4 /* Extensions.swift in Sources */,
 			);

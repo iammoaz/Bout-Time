@@ -12,12 +12,16 @@ import SafariServices
 class GameController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var nextRoundButton: UIButton!
     
     fileprivate var currentRound: [Event] = []
     
     fileprivate let game = Game()
     fileprivate let sound = Sound()
+    private var timer: Timer?
+    private var timerCount: Int = 60
+    
     private var roundNumber: Int = 1 {
         didSet {
             configureRound()
@@ -49,14 +53,16 @@ class GameController: UIViewController {
     
     func configureRound() {
         self.currentRound = game.rounds[roundNumber]
-        self.nextRoundButton.isHidden = false
+        self.nextRoundButton.isHidden = true
         self.tableView.setEditing(true, animated: true)
         self.tableView.reloadData()
+        startTimer()
     }
     
     func configureViewForFeedbackWith(_ value: Bool) {
         self.tableView.setEditing(false, animated: true)
         self.nextRoundButton.isHidden = false
+        stopTimer()
         
         if value {
             sound.playCorrectSound()
@@ -65,7 +71,34 @@ class GameController: UIViewController {
         }
     }
     
-    @IBAction func nextRoundButtonT(sender: UIButton) {
+    func startTimer() {
+        timerCount = 60
+        timerLabel?.text = "\(timerCount)"
+        guard timer == nil else { return }
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.updateTimerLabel), userInfo: nil, repeats: true)
+    }
+    
+    func stopTimer() {
+        guard timer != nil else { return }
+        timer?.invalidate()
+        timer = nil
+    }
+    
+    @objc func updateTimerLabel() {
+        if timerCount > 0 {
+            timerCount -= 1
+            self.timerLabel?.text = "\(timerCount)"
+        } else if timerCount == 0 {
+            stopTimer()
+            configureViewForFeedbackWith(game.checkAnswerFor(round: self.currentRound))
+        }
+        
+        if timerCount < 10 {
+            timerLabel?.textColor = Theme.wrongAnswerColor
+        }
+    }
+    
+    @IBAction func nextRoundButton(sender: UIButton) {
         self.roundNumber += 1
     }
 }
