@@ -120,7 +120,8 @@
 		41242A8C1E40B56400619611 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
-				418A18681E43500F00280030 /* Theme.swift */,
+				415DF7E51E43595500950815 /* Global */,
+				415F3E9D1E42288500AE60D4 /* UI Design */,
 			);
 			name = Theme;
 			sourceTree = "<group>";
@@ -157,12 +158,20 @@
 			name = Storyboard;
 			sourceTree = "<group>";
 		};
-		415F3E9D1E42288500AE60D4 /* Design */ = {
+		415DF7E51E43595500950815 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				418A18681E43500F00280030 /* Theme.swift */,
+			);
+			name = Global;
+			sourceTree = "<group>";
+		};
+		415F3E9D1E42288500AE60D4 /* UI Design */ = {
 			isa = PBXGroup;
 			children = (
 				415F3E9E1E4228B300AE60D4 /* CustomView.swift */,
 			);
-			name = Design;
+			name = "UI Design";
 			sourceTree = "<group>";
 		};
 		415F3EA21E4348B900AE60D4 /* Sounds */ = {
@@ -193,7 +202,6 @@
 		4163FB1E1E3BAB25008DA73B /* Bout Time */ = {
 			isa = PBXGroup;
 			children = (
-				415F3E9D1E42288500AE60D4 /* Design */,
 				41242A8A1E40B52400619611 /* Services */,
 				41242A861E40B50C00619611 /* Model */,
 				41242A871E40B51400619611 /* View */,

@@ -31,3 +31,13 @@ extension Collection {
         return Array(iterator)
     }
 }
+
+extension Int {
+    var asWord:String {
+        let numberValue = NSNumber(value: self)
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .spellOut
+        guard let word = formatter.string(from: numberValue) else { return "" }
+        return "\(word)".capitalized
+    }
+}

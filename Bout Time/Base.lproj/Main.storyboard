@@ -136,7 +136,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="footerLabel" destination="yZ5-ne-ubr" id="mXR-qZ-x3n"/>
                         <outlet property="nextRoundButton" destination="XYf-6P-mq3" id="jzt-v1-VdV"/>
+                        <outlet property="roundNumberLabel" destination="HKc-q0-Bxh" id="x1U-zm-rwg"/>
                         <outlet property="tableView" destination="U6O-eh-mWn" id="cYi-Pu-5e0"/>
                         <outlet property="timerLabel" destination="sLf-cc-Dch" id="RYf-3m-Fo8"/>
                     </connections>

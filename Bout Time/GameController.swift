@@ -11,9 +11,11 @@ import SafariServices
 
 class GameController: UIViewController {
     
+    @IBOutlet weak var roundNumberLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var nextRoundButton: UIButton!
+    @IBOutlet weak var footerLabel: UILabel!
     
     fileprivate var currentRound: [Event] = []
     
@@ -54,6 +56,7 @@ class GameController: UIViewController {
     func configureRound() {
         self.currentRound = game.rounds[roundNumber]
         self.nextRoundButton.isHidden = true
+        self.roundNumberLabel.text = "Round \(self.roundNumber.asWord)"
         self.tableView.setEditing(true, animated: true)
         self.tableView.reloadData()
         startTimer()
