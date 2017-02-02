@@ -25,4 +25,9 @@ struct Game {
         self.events.shuffle()
         self.rounds = self.events.chunk(by: 4)
     }
+    
+    func checkAnswerFor(round: [Event]) -> Bool {
+        let orderedArray = round.sorted{ $0.year! < $1.year! }
+        return round == orderedArray
+    }
 }

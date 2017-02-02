@@ -12,15 +12,7 @@ class GameController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    fileprivate var currentRound: [Event] = [] {
-        didSet {
-            if currentRound.count > 0 {
-                for event in currentRound {
-                    print(event.id!)
-                }
-            }
-        }
-    }
+    fileprivate var currentRound: [Event] = []
     
     fileprivate let game = Game()
     private var roundNumber: Int = 1
@@ -45,7 +37,7 @@ class GameController: UIViewController {
     
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
-            print("Shake Motion Ended")
+            print(game.checkAnswerFor(round: self.currentRound))
         }
     }
     
