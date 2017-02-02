@@ -13,6 +13,7 @@
 		41242A9C1E40C19000619611 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41242A9B1E40C19000619611 /* DataParser.swift */; };
 		41242A9E1E40C65E00619611 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41242A9D1E40C65E00619611 /* Game.swift */; };
 		415DF7E71E435F3D00950815 /* ThemeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415DF7E61E435F3D00950815 /* ThemeButton.swift */; };
+		415DF7E91E43761600950815 /* LandingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415DF7E81E43761600950815 /* LandingController.swift */; };
 		415F3E9A1E41E14F00AE60D4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415F3E991E41E14F00AE60D4 /* Extensions.swift */; };
 		415F3E9C1E42049800AE60D4 /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415F3E9B1E42049800AE60D4 /* GameCell.swift */; };
 		415F3E9F1E4228B300AE60D4 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415F3E9E1E4228B300AE60D4 /* ThemeView.swift */; };
@@ -35,6 +36,7 @@
 		41242A9B1E40C19000619611 /* DataParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
 		41242A9D1E40C65E00619611 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		415DF7E61E435F3D00950815 /* ThemeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeButton.swift; sourceTree = "<group>"; };
+		415DF7E81E43761600950815 /* LandingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingController.swift; sourceTree = "<group>"; };
 		415F3E991E41E14F00AE60D4 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		415F3E9B1E42049800AE60D4 /* GameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
 		415F3E9E1E4228B300AE60D4 /* ThemeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			children = (
 				4163FB211E3BAB25008DA73B /* GameController.swift */,
 				415F3EA01E433B9600AE60D4 /* WebController.swift */,
+				415DF7E81E43761600950815 /* LandingController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				418A18691E43500F00280030 /* Theme.swift in Sources */,
 				41242A9A1E40C16E00619611 /* DataService.swift in Sources */,
 				415F3E9A1E41E14F00AE60D4 /* Extensions.swift in Sources */,
+				415DF7E91E43761600950815 /* LandingController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

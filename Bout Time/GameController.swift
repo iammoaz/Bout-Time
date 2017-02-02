@@ -87,10 +87,16 @@ class GameController: UIViewController {
     }
     
     func configureViewForFinalResult() {
-        self.nextRoundButton.setTitle("PLAY AGAIN", for: .normal)
-        self.nextRoundButton.backgroundColor = Theme.playAgainColor
+        self.nextRoundButton.isHidden = true
         self.tableView.isHidden = true
         self.footerLabel.isHidden = true
+        dismissController()
+    }
+    
+    func dismissController() {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3) {
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
     func startTimer() {
