@@ -14,12 +14,13 @@ class GameController: UIViewController {
     @IBOutlet weak var roundNumberLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var timerLabel: UILabel!
+    @IBOutlet weak var finalResultLabel: UILabel!
     @IBOutlet weak var nextRoundButton: UIButton!
     @IBOutlet weak var footerLabel: UILabel!
     
     fileprivate var currentRound: [Event] = []
     
-    fileprivate let game = Game()
+    fileprivate var game = Game()
     fileprivate let sound = Sound()
     private var timer: Timer?
     private var timerCount: Int = 60
@@ -87,6 +88,8 @@ class GameController: UIViewController {
     }
     
     func configureViewForFinalResult() {
+        self.roundNumberLabel.text = "Your Score"
+        self.finalResultLabel.text = "\(game.numberOfCorrectAnswers)/\(game.rounds.count)"
         self.nextRoundButton.isHidden = true
         self.tableView.isHidden = true
         self.footerLabel.isHidden = true
@@ -182,6 +185,7 @@ extension GameController: UITableViewDelegate {
         let event = cell.event
         let url = URL(string: (event?.url)!)
         presentWebView(url: url!)
+        self.tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 

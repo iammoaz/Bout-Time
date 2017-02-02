@@ -11,6 +11,7 @@ import Foundation
 struct Game {
     private (set) var events: [Event] = []
     private (set) var rounds: ArraySlice<[Event]> = []
+    private (set) var numberOfCorrectAnswers: Int = 0
     
     init() {
         self.events.removeAll()
@@ -27,8 +28,14 @@ struct Game {
         self.rounds = self.events.chunk(by: 4).prefix(6)
     }
     
-    func checkAnswerFor(round: [Event]) -> Bool {
+    mutating func checkAnswerFor(round: [Event]) -> Bool {
         let orderedArray = round.sorted{ $0.year! < $1.year! }
-        return round == orderedArray
+        let value =  round == orderedArray
+        
+        if value {
+            self.numberOfCorrectAnswers += 1
+        }
+        
+        return value
     }
 }
