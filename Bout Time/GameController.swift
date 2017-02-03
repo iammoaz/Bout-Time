@@ -19,10 +19,12 @@ class GameController: UIViewController {
     @IBOutlet weak var nextRoundButton: UIButton!
     @IBOutlet weak var footerLabel: UILabel!
     
-    fileprivate var currentRound: [Event] = []
+    // MARK: - Variables and Constants
     
+    fileprivate var currentRound: [Event] = []
     fileprivate var game = Game()
     fileprivate let sound = Sound()
+    
     private var timer: Timer?
     private var timerCount: Int = 60
     
@@ -34,7 +36,7 @@ class GameController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
         self.roundNumber = 0
         
         self.tableView.dataSource = self
@@ -43,17 +45,16 @@ class GameController: UIViewController {
         self.tableView.isScrollEnabled = false
         self.tableView.allowsSelection = true
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
+    // MARK: - Motion Recognizer
     
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
             configureViewForFeedbackWith(game.checkAnswerFor(round: self.currentRound))
         }
     }
+    
+    // MARK: - View Configuration
     
     func configureRound() {
         if (self.roundNumber + 1) == game.rounds.count {
@@ -105,6 +106,8 @@ class GameController: UIViewController {
         dismissController()
     }
     
+    // MARK: - Helper Methods
+    
     func dismissController() {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3) {
             self.dismiss(animated: true, completion: nil)
@@ -138,6 +141,8 @@ class GameController: UIViewController {
         }
     }
     
+    // MARK: - Actions
+    
     @IBAction func nextRoundButton(sender: UIButton) {
         if (self.roundNumber + 1) < game.rounds.count {
             self.roundNumber += 1
@@ -146,6 +151,8 @@ class GameController: UIViewController {
         }
     }
 }
+
+// MARK: - TableView - DataSource
 
 extension GameController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -169,6 +176,8 @@ extension GameController: UITableViewDataSource {
         return cell
     }
 }
+
+// MARK: - TableView - Delegate
 
 extension GameController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
@@ -197,6 +206,8 @@ extension GameController: UITableViewDelegate {
         self.tableView.deselectRow(at: indexPath, animated: true)
     }
 }
+
+// MARK: - SFSafariView - Delegate
 
 extension GameController: SFSafariViewControllerDelegate {
     func presentWebView(url: URL) {
