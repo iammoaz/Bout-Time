@@ -9,6 +9,16 @@
 import UIKit
 
 struct Theme {
+    
+    static var navigationBarColor: UIColor {
+        return UIColor(red: 0.00, green: 0.16, blue: 0.28, alpha: 1.00)
+    }
+    
+    static var webControlTintColor: UIColor {
+        return UIColor(red: 1.00, green:1.00, blue:1.00, alpha: 1.00)
+    }
+    
+    
     static var correctAnswerColor: UIColor {
         return UIColor(red: 0.27, green: 0.69, blue: 0.41, alpha: 1.00)
     }
@@ -18,6 +28,6 @@ struct Theme {
     }
     
     static var playAgainColor: UIColor {
-        return UIColor(red:0.19, green:0.56, blue:0.69, alpha:1.00)
+        return UIColor(red: 0.19, green: 0.56, blue: 0.69, alpha: 1.00)
     }
 }

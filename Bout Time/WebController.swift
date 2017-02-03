@@ -13,5 +13,8 @@ class WebController: SFSafariViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.preferredBarTintColor = Theme.navigationBarColor
+        self.preferredControlTintColor = Theme.webControlTintColor
     }
 }
