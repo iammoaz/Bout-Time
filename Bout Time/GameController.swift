@@ -14,6 +14,7 @@ class GameController: UIViewController {
     @IBOutlet weak var roundNumberLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var timerLabel: UILabel!
+    @IBOutlet weak var feedbackLabel: UILabel!
     @IBOutlet weak var finalResultLabel: UILabel!
     @IBOutlet weak var nextRoundButton: UIButton!
     @IBOutlet weak var footerLabel: UILabel!
@@ -65,6 +66,7 @@ class GameController: UIViewController {
         self.currentRound = game.rounds[roundNumber]
         self.nextRoundButton.isHidden = true
         self.timerLabel.isHidden = false
+        self.feedbackLabel.isHidden = true
         self.footerLabel.text = "Shake to check answer"
         self.tableView.setEditing(true, animated: true)
         self.tableView.reloadData()
@@ -81,9 +83,15 @@ class GameController: UIViewController {
         if value {
             sound.playCorrectSound()
             self.nextRoundButton.backgroundColor = Theme.correctAnswerColor
+            self.feedbackLabel.text = "Correct!"
+            self.feedbackLabel.textColor = Theme.correctAnswerColor
+            self.feedbackLabel.isHidden = false
         } else {
             sound.playIncorrectSound()
             self.nextRoundButton.backgroundColor = Theme.wrongAnswerColor
+            self.feedbackLabel.text = "Incorrect!"
+            self.feedbackLabel.textColor = Theme.wrongAnswerColor
+            self.feedbackLabel.isHidden = false
         }
     }
     
@@ -91,6 +99,7 @@ class GameController: UIViewController {
         self.roundNumberLabel.text = "Your Score"
         self.finalResultLabel.text = "\(game.numberOfCorrectAnswers)/\(game.rounds.count)"
         self.nextRoundButton.isHidden = true
+        self.feedbackLabel.isHidden = true
         self.tableView.isHidden = true
         self.footerLabel.isHidden = true
         dismissController()
